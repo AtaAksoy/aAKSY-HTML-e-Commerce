@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Lexend+Deca|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f1f1f1;
+}
+a {
+  text-decoration: none;
+}
+navbar{
+  font-family: 'Cabin', sans-serif;
+  width: 100%;
+  height: 35px;
+  background: #d44444;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+navbar > div {
+  display: flex;
+  justify-content: space-around;
+}
+navbar > div a {
+  color: #fff;
+}
+navbar > div a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  min-height: 70px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.75);
+  z-index: 1;
+}
+nav a {
+  color: rgb(24, 24, 24);
+}
+nav a > i {
+  font-size: 20px;
+}
+nav div.account-info > a > i {
+  font-size: 25px;
+}
+.cardGUI { background: red;padding: 20px 0 !important; }
+nav div.account-info > a > i.nav-heart:hover {
+  color: rgb(160, 71, 76);
+}
+.search-button {
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  outline: 0;
+  position: relative;
+  left: -45px;
+  top: 4px;
+}
+.search-button:hover {
+  cursor: pointer;
+}
+.search-button i {
+  font-size: 22px;
+  color: rgb(47, 47, 47);
+}
+.search-input {
+  min-width: 450px;
+  min-height: 35px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 0;
+  color: rgb(98, 98, 98);
+  outline: 0;
+  text-indent: 15px;
+  background: #f1f1f1;
+}
+div.account-info {
+  display: flex;
+  min-width: 125px;
+  justify-content: space-between;
+}
+nav span.text {
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  top: -2px;
+  left: 5px;
+}
+nav span.shop-item {
+  position: relative;
+  padding: 0px 5px;
+  font-size: 10px;
+  background: #D24343;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50px;
+  top: 5px;
+  left: -10px;
+}
+div.large-categories {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  background: #fff;
+  padding: 30px 0px;
+  display: none;
+  justify-content: space-around;
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.75);
+}
+div.large-categories ul { list-style-type: none;}
+div.large-categories ul li a {
+  color: #323232;
+}
+div.large-categories ul.image-part {
+  width: 130px;
+  height: 180px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+div.large-categories ul.image-part img {
+}
+div.large-categories ul.image-part a {
+  padding: 10px 20px;
+  background: #2b6175;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+  top: -50px;
+  transition-duration: 0.3s;
+}
+div.large-categories ul.image-part a:hover {
+  background: rgba(43, 97, 117, 0.8);
+  top: -55px;
+}
+div.large-categories ul.image-part:hover > #filterimg {
+  transition-duration: 0.3s;
+  transform: scale(1.1);
+}
+div.cardGUI {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  top: 110px;
+  right: 30px;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+div.cardGUI img {
+  display: block;
+ max-width: 75%;
+ height: auto!important;
+
+}
+div.cardGUI div.items div{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+}
+div.cardGUI h4 { color: #909090; }
+div.cardGUI div.items div div.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.cardGUI a { color: #909090; }
+div.cardGUI a#buttons { color: #000; margin: 0 20px;}
+.banner-large {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: calc(100vh - 70px - 35px);
+  background: url("../assets/img/index/index.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  filter: grayscale(50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.index h1 { font-weight: bold; font-size: 55px;}
+.index h1 span { color: #A40000; }
+.index h4 { font-size: 45px; }
+.index p { color: #21b886; font-weight: bold; font-size: 30px;}
+.index .shop-now {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  top: 25px;
+  padding: 12.5px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: rgb(130, 3, 11);
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+.index .shop-now:hover {
+  background: rgba(130, 3, 11, 0.7);
+}
+.down-button {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #fff;
+  background: rgb(138, 29, 29);
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce-6 {
+  animation-name: bounce-6;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-6 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-25px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+
+.top-seller {
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  min-height: 600px;
+  margin: auto;
+
+  margin-top: 75px;
+}
+.top-seller .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-seller .header h1 { text-transform: uppercase;}
+.top-seller h3 { text-transform: uppercase; }
+
+.products {
+  width: 90%;
+  min-height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.product {
+  margin: 25px 25px;
+  /* border: 1px solid #000; */
+  box-sizing: border-box;
+  flex: 20%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product .image-part {
+  /* border: 1px solid red; */
+  width: 180px;
+  height: 250px;
+  overflow: hidden;
+}
+.product .image-part img {
+  max-width: 100%;
+  height: auto;
+}
+.back-img {
+  display: none;
+}
+.product .content-part {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.product .content-part h4 { color: #777777; font-weight: normal; letter-spacing: 0.5px;}
+.product .content-part h4 a { color: #777777; font-weight: normal; letter-spacing: 0.5px;}
+.product .content-part span { font-weight: bold;}
+.product .content-part span del { font-weight: normal !important;color: #464646; font-size: 13px; margin-left: 10px;}
+.product .content-part .see-product-button {
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  background: rgb(124, 30, 44);
+}
+.product .content-part .see-product-button:hover {
+  transition-duration: 0.3s;
+  background: rgba(124, 30, 44, 0.9);
+}
+.banner {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  min-height: 500px;
+  background: url("../assets/img/index/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .items { margin-left: 50px; flex-direction: column;}
+.banner h1 { font-size: 65px; color: rgb(149, 42, 45); }
+.banner h2 { font-size: 50px; letter-spacing: 0.5px; color: #444444; text-transform: uppercase;}
+.banner h3 { font-size: 35px; letter-spacing: 1px; color: #212121; text-transform: uppercase; margin-top: 10px;}
+.banner .buttons { position: relative; left: -50px;}
+.banner .banner-button {
+  font-size: 25px;
+  padding: 30px 60px;
+  color: #fff;
+  background: rgb(149, 42, 45);
+  border-radius: 1px;
+  transition-duration: 0.3s;
+}
+.banner .banner-button:hover {
+  background: rgba(149, 42, 45, 0.8);
+}
+footer {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  min-height: 350px;
+  background: #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul { list-style-type: none; }
+footer li { margin-bottom: 5px; font-size: 15px; }
+footer a { color: #3e3e3e; font-size: 14px; }
+footer p { font-size: 15px; }
+footer i { color: #959595; }
+footer h3 { color: #000; text-transform: uppercase; font-size: 17px; margin-bottom: 20px; letter-spacing: 0.4px;}
+footer .about p {
+  max-width: 510px;
+  word-wrap: break-word;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0;
+  }
+  footer h3 {
+    margin-bottom: 10px;
+  }
+  footer p { width: 250px;}
+  footer div.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.about p {
+    width: 40%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .search-box {
+    display: none;
+  }
+  div.large-categories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.large-categories ul.image-part {
+    display: none;
+  }
+  .down-button {
+    left: 45%;
+  }
+  .product {
+    flex: 100%;
+  }
+  .product .content-part .see-product-button {
+    margin-top: 10px;
+  }
+  .banner { flex-direction: column; justify-content: center;}
+  .banner div {
+    margin: 25px 50px;
+  }
+  .banner h1 { font-size: 27px; }
+  .banner h2 { font-size: 23px; }
+  .banner h3 { font-size: 20px; }
+  .banner .banner-button {
+    font-size: 22px;
+    padding: 10px 20px;
+  }
+  .banner .buttons {
+    left: 0;
+  }
+}

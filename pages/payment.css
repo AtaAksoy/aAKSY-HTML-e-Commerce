@@ -1,0 +1,24 @@
+.content {
+  width: 70%;
+  min-height: 400px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+}
+.content h2 { color: #0baa0d; }
+table.payment { width: 100%; text-align: center;}
+table a { color: #3b3b3b; text-decoration: underline;}
+@media only screen and (max-width: 768px) {
+  table tr td { font-size: 14px; }
+  table img { width: 62px; height: 100px;}
+  .content { width: 80%;}
+}
